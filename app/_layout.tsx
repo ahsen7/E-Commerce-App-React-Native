@@ -1,8 +1,16 @@
 import { Slot, Stack } from "expo-router";
-import { Text, View } from "react-native";
+import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
+import '../global.css'
+import { PaperProvider } from "react-native-paper";
 
-export default function RootLayout(){
-    return <Stack/>
-        
-    
+export default function RootLayout() {
+
+    return (
+        <PaperProvider>
+            <Stack />
+        </PaperProvider>
+
+    )
+
+
 }
