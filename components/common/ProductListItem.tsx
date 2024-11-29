@@ -2,10 +2,12 @@ import { StyleSheet, View, Image, TouchableOpacity, Dimensions } from 'react-nat
 import React from 'react'
 import { Avatar, Button, Card, Text } from 'react-native-paper';
 import { useCustomFonts } from '@/hooks/useFont';
+import { Link, router } from 'expo-router';
 
 
 
 type Product = {
+  id: string;
   name: string;
   description: string;
   price: string;
@@ -19,28 +21,25 @@ type ProductListItemProps = {
 };
 
 
-const ProductListItem: React.FC<ProductListItemProps> = ({ product }) => {
+export default function ProductListItem({product}) {
 
   const useFonts = useCustomFonts();
-  // const handlePress = () => {
-  //   Burnt.toast({
-  //     title: `${product.name}`,
-  //     message: `Price: $${product.price}`,
-  //     preset: "done", 
-  //   });
-  // };
+  const handlePress = () => {
+    router.push(`/product/${product.id}`);
+  }
   return (
     <TouchableOpacity
       style={styles.cardContainer}
       activeOpacity={0.9}
-    // onPress={handlePress}
+    onPress={handlePress}
     >
+      {/* <Link href={`/product/${product.id}`}>Open Details</Link> */}
       <View style={styles.imageContainer}>
         <Image source={{ uri: product.image }} style={styles.img} resizeMode='contain' />
       </View>
       <View style={styles.contentContainer}>
         <Text style={styles.title}>{product.name}</Text>
-        <Text style={styles.subtitle}>{product.description}</Text>
+        <Text style={styles.subtitle} numberOfLines={2} ellipsizeMode="tail">{product.subtitle}</Text>
         <Text style={styles.price}>${product.price}</Text>
       </View>
     </TouchableOpacity>
@@ -48,7 +47,7 @@ const ProductListItem: React.FC<ProductListItemProps> = ({ product }) => {
   )
 }
 
-export default ProductListItem
+// export default ProductListItem
 
 const styles = StyleSheet.create({
   cardContainer: {
@@ -83,13 +82,13 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: 'Jakarta-Bold',
-    fontSize: 12,
+    fontSize: 15,
     marginBottom: 4,
     color: '#333',
   },
   subtitle: {
     fontFamily: 'Jakarta-Medium',
-    fontSize: 12,
+    fontSize: 11,
     color: '#777',
     marginBottom: 6,
   },

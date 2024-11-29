@@ -1,102 +1,80 @@
-import React from "react";
-import { StyleSheet, Text, TouchableOpacity, View, ViewStyle, TextStyle } from "react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { useCustomFonts } from "@/hooks/useFont";
+import React from 'react';
+import { TouchableOpacity, Text, StyleSheet, ViewStyle, TextStyle } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { useCustomFonts } from '@/hooks/useFont';
 
-type CustomButtonProps = {
-  text: string;
-  icon?: string; 
+interface ButtonProps {
+  title: string;
   onPress: () => void;
-  buttonStyle?: ViewStyle;
-  textStyle?: TextStyle;
+  color?: string;
+  textColor?: string;
+  icon?: keyof typeof Ionicons.glyphMap;
   iconColor?: string;
-  iconSize?: number;
-  width?: number | string; 
-};
+  borderRadius?: number;
+  width?: number | string;
+  height?: number;
+  fontSize?: number;
+  disabled?: boolean;
+  padding?: number | string;
 
-const CustomButton: React.FC<CustomButtonProps> = ({
-  text,
-  icon,
+}
+
+export const CustomButton: React.FC<ButtonProps> = ({
+  title,
   onPress,
-  buttonStyle,
-  textStyle,
-  iconColor = "#fff",
-  iconSize = 20,
-  width = "auto", 
+  color = '#007AFF',
+  textColor = '#FFFFFF',
+  icon,
+  iconColor,
+  borderRadius = 8,
+  width = '100%',
+  height = 55,
+  fontSize = 16,
+  disabled = false,
+  
 }) => {
-      const fontsLoaded = useCustomFonts();
+  const buttonStyle: ViewStyle = {
+    backgroundColor: disabled ? '#A0A0A0' : color,
+    borderRadius,
+    width,
+    height,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    padding : 10,
+  };
+
+  const textStyle: TextStyle = {
+    color: disabled ? '#FFFFFF' : textColor,
+    fontSize,
+    fontWeight: 'bold',
+    marginLeft: icon ? 8 : 0,
+    fontFamily:'Jakarta-SemiBold'
+  };
+
+
+  const usefonts = useCustomFonts();
+
   return (
     <TouchableOpacity
-      style={[styles.button, buttonStyle, { width }]} 
+      style={buttonStyle}
       onPress={onPress}
+      disabled={disabled}
+      activeOpacity={0.7}
     >
       {icon && (
-        <MaterialCommunityIcons
+        <Ionicons
           name={icon}
-          size={iconSize}
-          color={iconColor}
-          style={styles.icon}
+          size={fontSize + 4}
+          color={iconColor || textColor}
         />
       )}
-      <Text style={[styles.text, textStyle]}>{text}</Text>
+      <Text style={textStyle}>{title}</Text>
     </TouchableOpacity>
   );
 };
 
-export default CustomButton;
-
 const styles = StyleSheet.create({
-  button: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#6200ee",
-    paddingVertical: 18,
-    paddingHorizontal: 10,
-    borderRadius: 25,
-    elevation: 4,
-  },
-  text: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "bold",
-    marginLeft: 8,
-    fontFamily:'Jakarta-SemiBold'
-  },
-  icon: {
-    marginRight: 8,
-  },
+  // No styles needed here as we're using inline styles for flexibility
 });
-
-// import React from "react";
-// import { Button } from "react-native-paper";
-
-// const CustomButton = () => {
-//   return (
-//     <Button
-//       icon="camera"
-//       mode="contained"
-//       onPress={() => console.log("Pressed")}
-//       style={{
-//         paddingVertical: 16,  // Increase height of button
-//         paddingHorizontal: 32,  // Increase width of button
-//         borderRadius: 12,  // Adjust border radius for better look
-//       }}
-//       labelStyle={{
-//         fontSize: 20,  // Increase text size
-//         fontWeight: "bold",  // Make text bold
-//       }}
-//       iconColor="#fff"  // Adjust icon color
-//       iconSize={30}  // Increase icon size
-//       contentStyle={{
-//         justifyContent: "center",  // Align content in the center
-//         alignItems: "center",  // Center the text and icon
-//       }}
-//     >
-//       Press me
-//     </Button>
-//   );
-// };
-
-// export default CustomButton;
 

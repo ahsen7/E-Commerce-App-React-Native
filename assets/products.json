@@ -1,72 +1,82 @@
 [
-    {
-      "id": 1,
-      "name": "AirPods Pro",
-      "description": "Apple's wireless noise-cancelling earbuds with adaptive transparency and spatial audio.",
-      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/airpodspro.jpg",
-      "price": 249.99
-    },
-    {
-      "id": 2,
-      "name": "Apple Watch Series 9",
-      "description": "Latest smartwatch from Apple featuring always-on retina display and advanced health monitoring.",
-      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/applewatch.jpg",
-      "price": 399.99
-    },
-    {
-      "id": 3,
-      "name": "Bose Noise Cancelling Headphones",
-      "description": "Premium noise-cancelling over-ear headphones with 20 hours of battery life and voice assistant integration.",
-      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/boseheadphones.jpg",
-      "price": 349.99
-    },
-    {
-      "id": 4,
-      "name": "Dyson V15 Vacuum",
-      "description": "Powerful cordless vacuum with laser-detect technology and advanced filtration system.",
-      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/dysonvacuum.jpg",
-      "price": 699.99
-    },
-    {
-      "id": 5,
-      "name": "Samsung Galaxy S24 Ultra",
-      "description": "Flagship smartphone with 200MP camera, 120Hz AMOLED display, and S Pen support.",
-      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/galaxys24ultra.jpg",
-      "price": 1199.99
-    },
-    {
-      "id": 6,
-      "name": "iPad Pro",
-      "description": "12.9-inch iPad Pro with M2 chip, Liquid Retina XDR display, and 5G connectivity.",
-      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/ipad.jpg",
-      "price": 1099.99
-    },
-    {
-      "id": 7,
-      "name": "iPhone 16 Pro",
-      "description": "Apple's latest iPhone with A18 Bionic chip, ProMotion display, and advanced triple-lens camera system.",
-      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/iphone16pro.jpg",
-      "price": 1299.99
-    },
-    {
-      "id": 8,
-      "name": "MacBook Pro 16-inch",
-      "description": "High-performance laptop with M2 Max chip, Liquid Retina XDR display, and 1TB SSD.",
-      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/macbookpro.jpg",
-      "price": 2499.99
-    },
-    {
-      "id": 9,
-      "name": "Nike Air Max 270",
-      "description": "Popular running shoes with Nike Air cushioning and breathable mesh upper.",
-      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/nikeairmax.jpg",
-      "price": 149.99
-    },
-    {
-      "id": 10,
-      "name": "PlayStation 5",
-      "description": "Sony's latest gaming console with 8K output, lightning-fast load times, and 825GB SSD.",
-      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/playstation5.jpg",
-      "price": 499.99
-    }
-  ]
+  {
+    "id": 1,
+    "name": "AirPods Pro",
+    "subtitle": "Experience immersive sound with Apple's finest earbuds.",
+    "description": "Apple's premium wireless noise-cancelling earbuds offer an unparalleled audio experience. Equipped with adaptive transparency and spatial audio, these earbuds create a personalized and immersive sound environment. Designed for superior sound quality and comfort, they are perfect for making calls, enjoying music, and daily use. With sweat and water resistance, long battery life, and seamless connectivity to Apple devices, they redefine how you enjoy audio on the go.",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/airpodspro.jpg",
+    "price": 249.99
+  },
+  {
+    "id": 2,
+    "name": "Apple Watch Series 9",
+    "subtitle": "Redefining fitness and health monitoring.",
+    "description": "The Apple Watch Series 9 is the ultimate companion for a healthy and connected lifestyle. Featuring an always-on retina display, advanced health monitoring capabilities, and seamless integration with your iPhone, it keeps you informed and active. With features like blood oxygen monitoring, ECG, and workout tracking, it supports your fitness goals. The powerful new S9 chip delivers faster performance and improved battery efficiency, while its sleek design ensures you stay stylish on the go.",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/applewatch.jpg",
+    "price": 399.99
+  },
+  {
+    "id": 3,
+    "name": "Bose Noise Cancelling Headphones",
+    "subtitle": "Unmatched sound quality with premium noise cancellation.",
+    "description": "Bose Noise Cancelling Headphones are a masterpiece of engineering, delivering exceptional sound clarity and powerful noise-cancelling technology. Designed for comfort during long listening sessions, they feature soft ear cushions and an ergonomic fit. With up to 20 hours of battery life, intuitive touch controls, and voice assistant integration, they are ideal for work, travel, or relaxation. Enjoy a truly immersive listening experience, whether you're on a call or listening to your favorite playlist.",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/boseheadphones.jpg",
+    "price": 349.99
+  },
+  {
+    "id": 4,
+    "name": "Dyson V15 Vacuum",
+    "subtitle": "The ultimate cleaning powerhouse for your home.",
+    "description": "The Dyson V15 Vacuum is the most powerful and intelligent cordless vacuum from Dyson yet. Equipped with laser-detect technology, it reveals microscopic dust particles while the advanced filtration system captures 99.99% of particles as small as 0.3 microns. The vacuum delivers fade-free power with up to 60 minutes of runtime, ensuring deep and thorough cleaning of your floors and furniture. With its lightweight design and versatile attachments, it makes cleaning an effortless task.",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/dysonvacuum.jpg",
+    "price": 699.99
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy S24 Ultra",
+    "subtitle": "Innovation meets excellence in mobile technology.",
+    "description": "The Samsung Galaxy S24 Ultra takes smartphone technology to the next level with its groundbreaking features. Boasting a stunning 200MP camera system, it captures incredible detail and clarity in every shot. The 120Hz AMOLED display provides a smooth and vibrant viewing experience, while the integrated S Pen offers unparalleled productivity. With a powerful chipset, long-lasting battery, and premium design, the S24 Ultra is the perfect choice for those seeking the best in performance and innovation.",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/galaxys24ultra.jpg",
+    "price": 1199.99
+  },
+  {
+    "id": 6,
+    "name": "iPad Pro",
+    "subtitle": "The ultimate creative and productivity tool.",
+    "description": "The iPad Pro is a technological marvel designed for professionals and creatives alike. Its stunning 12.9-inch Liquid Retina XDR display delivers lifelike visuals, while the M2 chip provides unmatched performance for multitasking and demanding apps. Whether you're editing videos, designing graphics, or enjoying immersive entertainment, the iPad Pro has you covered. With 5G connectivity, Apple Pencil 2 support, and all-day battery life, it transforms how you work and create.",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/ipad.jpg",
+    "price": 1099.99
+  },
+  {
+    "id": 7,
+    "name": "iPhone 16 Pro",
+    "subtitle": "Apple's most advanced iPhone ever.",
+    "description": "The iPhone 16 Pro sets a new standard for smartphones with its cutting-edge technology and stunning design. Powered by the A18 Bionic chip, it offers lightning-fast performance and energy efficiency. The ProMotion display provides an incredibly smooth and immersive viewing experience, while the advanced triple-lens camera system lets you capture professional-quality photos and videos. With enhanced durability, 5G connectivity, and the latest iOS features, the iPhone 16 Pro is the pinnacle of mobile innovation.",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/iphone16pro.jpg",
+    "price": 1299.99
+  },
+  {
+    "id": 8,
+    "name": "MacBook Pro 16-inch",
+    "subtitle": "The ultimate laptop for professionals.",
+    "description": "The MacBook Pro 16-inch is a powerhouse of performance, designed for professionals who demand the best. Featuring the M2 Max chip, it delivers extraordinary speed and efficiency for tasks like video editing, software development, and graphic design. The Liquid Retina XDR display offers unparalleled clarity and color accuracy, while the 1TB SSD ensures lightning-fast storage. With an impressive battery life, advanced thermal management, and sleek design, the MacBook Pro is in a league of its own.",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/macbookpro.jpg",
+    "price": 2499.99
+  },
+  {
+    "id": 9,
+    "name": "Nike Air Max 270",
+    "subtitle": "Style and comfort for your everyday adventures.",
+    "description": "The Nike Air Max 270 combines innovative design with maximum comfort, making it the perfect choice for active lifestyles. Featuring Nike's signature Air cushioning, it provides exceptional support and shock absorption for all-day wear. The breathable mesh upper ensures a lightweight and comfortable fit, while the bold design adds a touch of style to any outfit. Whether you're running errands or hitting the gym, these shoes are built to keep you moving.",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/nikeairmax.jpg",
+    "price": 149.99
+  },
+  {
+    "id": 10,
+    "name": "PlayStation 5",
+    "subtitle": "The future of gaming, delivered today.",
+    "description": "The PlayStation 5 redefines the gaming experience with its cutting-edge hardware and features. Enjoy lightning-fast load times, stunning 8K graphics, and immersive 3D audio that brings your games to life. The DualSense controller adds haptic feedback and adaptive triggers for a more engaging gameplay experience. With a growing library of exclusive titles and backward compatibility with PS4 games, the PS5 is the ultimate console for gamers of all levels.",
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/ecom/playstation5.jpg",
+    "price": 499.99
+  }
+]
