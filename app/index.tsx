@@ -7,27 +7,32 @@ import AwesomeButton from "react-native-really-awesome-button";
 import { ThemedButton } from "react-native-really-awesome-button";
 
 
+
 export default function HomeScreen() {
     return (
-        <View>
+        <View style={styles.Container}>
             <FlatList
                 data={products}
                 numColumns={2}
                 renderItem={({ item }) => <ProductListItem product={item} />}
                 contentContainerStyle={styles.contentContainer}
                 columnWrapperStyle={styles.columnWrapper}
+                showsVerticalScrollIndicator={false}
             />
-            
-
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     contentContainer: {
-        gap:10
+        paddingHorizontal: 5, // Add uniform padding
+        paddingVertical: 10,
     },
-    columnWrapper:{
-        gap:10
+    columnWrapper: {
+        justifyContent: 'space-between',
+        
+    },
+    Container: {
+        flex: 1,
     }
 })
